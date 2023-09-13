@@ -1,0 +1,59 @@
+Continue = True
+
+while Continue == True:
+    try:
+        ask = input("Type 'P' for Prefix and 'S' for Suffix: ")
+
+        if ask == "P":
+            S1 = input("Give me some word: ")
+
+            prefixes = set()
+
+            for i in range(-1, len(S1)):
+                prefixes.add(S1[:i])
+
+            sorted = sorted(prefixes)
+
+            print(sorted)
+
+                   
+            try:
+                cont = input("\nDo you want to continue? Y/N: ")
+                print("")
+                if cont == "Y":
+                    Contine = True
+                else:
+                    Continue = False
+
+            except ValueError:
+                print("\nInvalid Input! \n")
+
+        elif ask == "S":
+            h2 = input("Give me some word: ")
+            S1 = h2[::-1]
+            suffix = set()
+        
+            for i in range( len(S1)):
+                suffix.add(S1[:i])
+
+            sorted = sorted(suffix)
+
+            print(sorted)
+
+                               
+            try:
+                cont = input("\nDo you want to continue? Y/N: ")
+                print("")
+                if cont == "Y":
+                    Contine = True
+                else:
+                    Continue = False
+
+            except ValueError:
+                print("\nInvalid Input! \n")
+                
+        else:
+            print("\nOnly 'P' and 'Y' only! \n")
+
+    except ValueError:
+        print(" \nvalue Error! \n")
