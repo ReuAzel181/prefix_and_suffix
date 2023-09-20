@@ -1,3 +1,2 @@
 # LISTING_PREFIXandSUFFIX
-This Python program lets users input a word and choose to generate either prefixes or suffixes. It continues until the user decides to stop, handling input errors. Shutek kelangan ko lang sa streak, 
-
+This Python program lets users input a word and choose to generate either prefixes or suffixes. It continues until the user decides to stop, handling input errors. 
